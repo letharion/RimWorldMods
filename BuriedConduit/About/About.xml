@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Buried conduit</name>
+  <author>Claes 'Letharion' Gyllensvard</author>
+  <url>http://github.com/letharion/RimWorldMods</url>
+  <targetVersion>Alpha 2</targetVersion>
+  <description>Simple mod that adds a new "buried conduit" equivalent of regular power conduits.</description>
+</ModMetaData>

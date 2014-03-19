@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<bulletImpactSound>BulletImpactMetal</bulletImpactSound>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>BuriedPowerConduit</defName>
+		<eType>Building_PowerConduit</eType>
+		<label>Buried Power conduit</label>
+		<thingClass>Building</thingClass>
+		<linkDrawerType>Transmitter</linkDrawerType>
+		<linkFlags>
+			<li>PowerConduit</li>
+		</linkFlags>
+		<category>Building</category>
+		<texturePath>Things/Building/Linked/PowerConduit_Atlas</texturePath>
+		<blueprintTexturePath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</blueprintTexturePath>
+		<menuIconPath>Things/Building/Linked/PowerConduit_MenuIcon</menuIconPath>
+		<flammability>0.1</flammability>
+		<linkFlags>
+			<li>PowerConduit</li>
+		</linkFlags>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<maxHealth>800</maxHealth>
+		<description>Transmits power.</description>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<workToBuild>500</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>1</count>
+			</li>
+		</costList>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<bulletImpactSound>BulletImpactMetal</bulletImpactSound>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Structure</designationCategory>
+		<transmitsPower>true</transmitsPower>
+		<constructionEffect>ConstructDig</constructionEffect>
+	</ThingDef>
+</Buildings>
